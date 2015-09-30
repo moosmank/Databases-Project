@@ -1,0 +1,32 @@
+Database Schema:
+
+Inventory (ItemId, Description, Stock, Price, ReStockBy, DeptId)
+
+Customer (CustomerId, LastName, FirstName)
+
+Employee (EmployeeId, LastName, FirstName, 
+Occupation, Age, DateOfBirth, DeptId) 
+
+Supplies (ItemId, Description, Location, EmployeeId)
+
+Vendor (VendorId, BusinessName)
+
+Sales (ReceiptId, CostTotal, Date)
+
+SalesItem (ReceiptId, ItemId) 
+
+InvPurchase (ReceiptId, CostTotal, Date)
+
+InvPurchaseItem (ReceiptId, ItemId) 
+
+SupPurchase (ReceiptId, CostTotal, Date)
+
+SupPurchaseItem (ReceiptId, ItemId)
+
+Schedule (EmployeeId, Day/Hours)
+
+Evaluation (EmployeeId, CustomerId, Date, Rating)
+
+Department (DeptId, Name)
+
+Manages (EmployeeId, Name, Occupation, Age, DateOfBirth, ManagesEmployeeId)
